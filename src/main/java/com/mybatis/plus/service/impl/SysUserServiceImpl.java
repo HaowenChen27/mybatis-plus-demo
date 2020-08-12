@@ -1,7 +1,7 @@
 package com.mybatis.plus.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.mybatis.plus.mapper.SysUserMapper;
+import com.mybatis.plus.dao.SysUserMapper;
 import com.mybatis.plus.model.SysUser;
 import com.mybatis.plus.service.ISysUserService;
 import org.springframework.stereotype.Service;

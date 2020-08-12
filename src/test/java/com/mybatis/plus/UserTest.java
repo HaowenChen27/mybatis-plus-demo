@@ -2,7 +2,7 @@ package com.mybatis.plus;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mybatis.plus.bootstrap.MybatisPlusApplication;
-import com.mybatis.plus.mapper.SysUserMapper;
+import com.mybatis.plus.dao.SysUserMapper;
 import com.mybatis.plus.model.SysUser;
 import com.mybatis.plus.service.ISysUserService;
 import org.junit.Test;
@@ -29,8 +29,10 @@ public class UserTest {
 
     @Test
     public void test1() {
-        SysUser sysUser = sysUserMapper.selectById(1);
-        System.out.println(JSONObject.toJSONString(sysUser));
+//        SysUser sysUser = sysUserMapper.selectById(1);
+//        System.out.println(JSONObject.toJSONString(sysUser));
+        Long size = sysUserMapper.countSize();
+        System.out.println(size);
     }
 
 

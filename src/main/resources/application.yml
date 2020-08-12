@@ -6,6 +6,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
   global-config:
     db-config:
       id-type: auto
@@ -15,8 +16,9 @@ spring:
       #逻辑删除配置
       logic-delete-value: 0
       logic-not-delete-value: 1
-      db-type: mysql
     refresh: false
     configuration:
       map-underscore-to-camel-case: true
       cache-enabled: false
+  mapper-locations: classpath:com/mybatis/plus/mapper/*.xml
+  type-aliases-package: com.mybatis.plus.model

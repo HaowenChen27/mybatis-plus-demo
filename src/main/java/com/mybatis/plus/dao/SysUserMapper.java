@@ -1,4 +1,4 @@
-package com.mybatis.plus.mapper;
+package com.mybatis.plus.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.mybatis.plus.model.SysUser;
@@ -14,5 +14,11 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
+
+    /**
+     * 查询数据量
+     * @return
+     */
+    Long countSize();
 
 }
