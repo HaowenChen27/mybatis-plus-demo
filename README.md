@@ -24,3 +24,5 @@ springboot整合mybatisplus
         </resources>
     </build>
 ```
+@ComponentScan 注解可以使用通配符 但是注意 \* 只匹配包 \**才会匹配到包下的文件
+不能直接使用'com.\**' 会不生效
